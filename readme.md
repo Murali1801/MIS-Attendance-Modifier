@@ -32,5 +32,5 @@ This extension **automatically modifies** both **Lecture** and **Practical** att
 ### **For Development:**  
 1️⃣ **Clone the Repository**  
    ```sh
-   git clone https://github.com/your-username/attendance-modifier-extension.git
+   git clone https://github.com/Murali1801/MIS-Attendance-Modifier.git
    cd attendance-modifier-extension
