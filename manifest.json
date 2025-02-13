@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Attendance Modifier",
+  "version": "1.0",
+  "description": "Enhances the attendance table by adding skip/required lectures for 75% attendance.",
+  "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon64.png",
+      "128": "icons/icon128.png"
+  },
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+      "https://mis.aldel.lan/sjcet/view_stud_attendance.php*"
+  ],
+  "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "16": "icons/icon16.png",
+          "48": "icons/icon64.png",
+          "128": "icons/icon128.png"
+      }
+  },
+  "content_scripts": [
+      {
+          "matches": ["https://mis.aldel.lan/sjcet/view_stud_attendance.php*"],
+          "js": ["scripts/content.js"]
+      }
+  ]
+}
